@@ -1,11 +1,24 @@
+/*************************
+ * Author: Travis Ashcraft
+ *
+ * Speed Converter
+ *
+ * Travisashcraft.github.io
+ */
+
 package com.company;
 import java.lang.Math;
+import java.util.Scanner;
+
 
 public class Main {
 
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-        printConversion(0);
+        System.out.println("Enter the kilometers per hour you want to convert to miles per hour: ");
+        long conversion = scanner.nextLong();
+        printConversion(conversion);
     }
 
     public static long toMilesPerHour(double kilometersPerHour){
